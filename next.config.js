@@ -1,8 +1,8 @@
 module.exports = {
   publicRuntimeConfig: {
     APP_NAME: 'DIY Daily',
-    API_DEVELOPMENT: 'https://pear-clumsy-nightingale.cyclic.app/api',
-    API_PRODUCTION: 'https://pear-clumsy-nightingale.cyclic.app/api',
+    API_DEVELOPMENT: 'https://diydaily-tk.cyclic.app/api',
+    API_PRODUCTION: 'https://diydaily-tk.cyclic.app/api',
     DOMAIN_DEVELOPMENT: 'http://localhost:3000',
     DOMAIN_PRODUCTION: 'https://diydaily-tk.netlify.app',
     FB_APP_ID: '627061882313745',
