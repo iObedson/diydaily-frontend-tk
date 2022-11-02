@@ -190,7 +190,7 @@ const CreateBlog = ({ router }) => {
 
   const createBlogForm = () => {
     return (
-      <form id={publish} onSubmit={publishBlog}>
+      <form id={publishBlog} onSubmit={publishBlog}>
         <div className="form-group">
           <label className="text-muted">Title</label>
           <input
@@ -212,11 +212,7 @@ const CreateBlog = ({ router }) => {
         </div>
 
         <div>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            form={publish}
-          >
+          <button type="submit" className="btn btn-primary" form={publishBlog}>
             Publish
           </button>
         </div>
