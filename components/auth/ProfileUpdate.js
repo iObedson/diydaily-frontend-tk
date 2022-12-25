@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
-import { getCookie, updateUser } from '../../actions/auth';
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import Router from 'next/router';
+import { getCookie, isAuth, updateUser } from '../../actions/auth';
 import { getProfile, update } from '../../actions/user';
 import { API } from '../../config';
 
@@ -18,8 +20,18 @@ const ProfileUpdate = () => {
   });
 
   const token = getCookie('token');
-  const { username, name, email, about, password, error, success, loading } =
-    values;
+  const {
+    username,
+    name,
+    email,
+    about,
+    password,
+    error,
+    success,
+    loading,
+    photo,
+    userData,
+  } = values;
 
   const init = () => {
     getProfile(token).then((data) => {
@@ -177,7 +189,7 @@ const ProfileUpdate = () => {
   );
 
   return (
-    <>
+    <React.Fragment>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
@@ -196,7 +208,7 @@ const ProfileUpdate = () => {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
