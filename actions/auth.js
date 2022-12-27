@@ -25,7 +25,6 @@ export const preSignup = (user) => {
   return fetch(`${API}/pre-signup`, {
     method: 'POST',
     mode: 'cors',
-    credentials: 'include',
     method: 'POST',
     headers: headers,
     body: JSON.stringify(user),
