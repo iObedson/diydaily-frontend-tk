@@ -17,16 +17,13 @@ export const handleResponse = (response) => {
 };
 
 export const preSignup = (user) => {
-  let headers = new Headers();
-  headers.append('Content-Type', 'application/json');
-  headers.append('Accept', 'application/json');
-  headers.append('Authorization', 'Basic');
   headers.append('Origin', 'https://diydaily.win');
   return fetch(`${API}/pre-signup`, {
     method: 'POST',
-    mode: 'cors',
-    method: 'POST',
-    headers: headers,
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(user),
   })
     .then((response) => {
