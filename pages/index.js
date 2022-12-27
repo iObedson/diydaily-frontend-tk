@@ -28,16 +28,14 @@ const Index = () => {
                 Are you interested in learning new skills and tackling projects
                 on your own? Look no further! Our website is dedicated to
                 providing high-quality, step-by-step guides for DIY projects in
-                the fields of agriculture, electrical/electronics, and
-                programming. Whether you're a seasoned DIY enthusiast or a
-                beginner looking to get started, we have something for everyone.
-                We also have a variety of resources available to help you
-                succeed, including video guides, forums, and a community of
-                supportive individuals. So if you're ready to take the first
-                step towards learning about agriculture, electrical/electronics,
-                or computer programming, sign up for our newsletter and start
-                exploring our website today. Here are just a few examples of the
-                types of projects you can find on our website:
+                the fields of agriculture, programming, batteries, renewable
+                energy, lighting and home decorations. Whether you're a seasoned
+                DIY enthusiast or a beginner looking to get started, we have
+                something for everyone. We also have a variety of resources
+                available to help you succeed, including video guides, forums,
+                and a community of supportive individuals. So if you're ready to
+                take a step towards your first DIY project, start exploring our
+                website today.
               </p>
             </div>
           </div>
@@ -87,7 +85,7 @@ const Index = () => {
                 <div className="back text-center">
                   <Link href="categories/cloudinary">
                     <a>
-                      <h3 className="h1">Elect/Electronics Projects: </h3>
+                      <h3 className="h1">Tech Projects: </h3>
                     </a>
                   </Link>
                   <p className="lead">

@@ -22,6 +22,8 @@ export const preSignup = (user) => {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
+      mode: 'cors',
+      credentials: 'include',
     },
     body: JSON.stringify(user),
   })
