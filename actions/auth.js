@@ -19,7 +19,6 @@ export const handleResponse = (response) => {
 export const preSignup = (user) => {
   return fetch(`${API}/pre-signup`, {
     method: 'POST',
-    mode: 'cors',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
