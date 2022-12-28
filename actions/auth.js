@@ -20,7 +20,9 @@ export const preSignup = (user) => {
   const headers = {
     Accept: 'application/json',
     'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': 'https://diydaily.win',
   };
+
   return fetch(`${API}/pre-signup`, {
     method: 'POST',
     headers: headers,
