@@ -16,16 +16,48 @@ export const handleResponse = (response) => {
   }
 };
 
-export const preSignup = (user) => {
-  const headers = {
-    Accept: 'application/json',
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': 'https://diydaily.win',
-  };
+// export const preSignup = (user) => {
+//   const headers = {
+//     Accept: 'application/json',
+//     'Content-Type': 'application/json',
+//     'Access-Control-Allow-Origin': 'https://diydaily.win',
+//   };
 
+//   return fetch(`${API}/pre-signup`, {
+//     method: 'POST',
+//     headers: headers,
+//     body: JSON.stringify(user),
+//   })
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .catch((err) => console.log(err));
+// };
+
+// export const signup = (user) => {
+//   return fetch(`${API}/signup`, {
+//     method: 'POST',
+//     headers: {
+//       Accept: 'application/json',
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(user),
+//   })
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .catch((err) => console.log(err));
+// };
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+export const preSignup = (user) => {
   return fetch(`${API}/pre-signup`, {
     method: 'POST',
-    headers: headers,
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
     body: JSON.stringify(user),
   })
     .then((response) => {
@@ -48,6 +80,7 @@ export const signup = (user) => {
     })
     .catch((err) => console.log(err));
 };
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
 export const signin = (user) => {
   return fetch(`${API}/signin`, {

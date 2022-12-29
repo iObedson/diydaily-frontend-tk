@@ -27,7 +27,7 @@ const SignupComponent = () => {
     const user = { name, email, password };
 
     preSignup(user).then((data) => {
-      if (data?.error) {
+      if (data.error) {
         setValues({ ...values, error: data.error, loading: false });
       } else {
         setValues({
@@ -37,7 +37,7 @@ const SignupComponent = () => {
           password: '',
           error: '',
           loading: false,
-          message: data?.message,
+          message: data.message,
           showForm: false,
         });
       }
