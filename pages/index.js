@@ -8,9 +8,9 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h1 className="display-4 font-weight-bold">
-                DIY - VIDEOS - BLOGS - COMMUNITY GUIDES
-              </h1>
+              <h3 className="display-6 font-weight-bold">
+                DAILY DIY CHALLENGE - VIDEOS - BLOGS - COMMUNITY GUIDES
+              </h3>
             </div>
           </div>
         </div>
@@ -18,24 +18,23 @@ const Index = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center pt-4 pb-5">
-              <p className="lead">Welcome to DIY Daily Blogs!</p>
-              <p className="lead">
+              <h4 className="display-5 font-weight-600 ">
+                Welcome to DIY Daily Blogs!
+              </h4>
+              <h4 className="display-6 font-weight-600">
                 {' '}
                 #1 Production-ready and Industry Best Practice Do It Yourself
                 Tutorial Guides
-              </p>
+              </h4>
               <p className="lead">
-                Are you interested in learning new skills and tackling projects
-                on your own? Look no further! Our website is dedicated to
-                providing high-quality, step-by-step guides for DIY projects in
-                the fields of agriculture, programming, batteries, renewable
-                energy, lighting and home decorations. Whether you're a seasoned
-                DIY enthusiast or a beginner looking to get started, we have
-                something for everyone. We also have a variety of resources
-                available to help you succeed, including video guides, forums,
-                and a community of supportive individuals. So if you're ready to
-                take a step towards your first DIY project, start exploring our
-                website today.
+                We offer step-by-step guides for DIY projects in various fields
+                such as agriculture, programming, batteries, renewable energy,
+                lighting, and home decorations. We have resources available to
+                help DIY enthusiasts, including a daily challenge with prizes,
+                video guides, forums, and a supportive community. Beginners and
+                experienced individuals can find something on our website and
+                social media channels. Sign up and participate in our daily
+                challenge for a chance to win prizes.
               </p>
             </div>
           </div>
@@ -53,12 +52,12 @@ const Index = () => {
                       ')',
                   }}
                 >
-                  <h2 className="text-shadow text-center h1">DIY Agro Tech</h2>
+                  <h2 className="text-shadow text-center h1">Agriculture</h2>
                 </div>
                 <div className="back text-center">
                   <Link href="/categories/google-cloud">
                     <a>
-                      <h3 className="h1">Agriculture And Gardening</h3>
+                      <h5 className="h4">Agriculture And Gardening</h5>
                     </a>
                   </Link>
                   <p className="lead">
@@ -80,17 +79,18 @@ const Index = () => {
                       ')',
                   }}
                 >
-                  <h2 className="text-shadow text-center h1">DIY Technical </h2>
+                  <h2 className="text-shadow text-center h4">Technology</h2>
                 </div>
                 <div className="back text-center">
                   <Link href="categories/cloudinary">
                     <a>
-                      <h3 className="h1">Tech Projects: </h3>
+                      <h5 className="h4">Tech Projects: </h5>
                     </a>
                   </Link>
                   <p className="lead">
-                    Build your own electronic projects, such as a DIY home
-                    security system or a smart . . .
+                    Learn how to use diodes, capacitors, resistors etc to build
+                    your own simple electronic projects, such as a DIY home
+                    security system, lighting and home decorations.
                   </p>
                 </div>
               </div>
@@ -107,14 +107,12 @@ const Index = () => {
                       ')',
                   }}
                 >
-                  <h2 className="text-shadow text-center h1">
-                    DIY Programming
-                  </h2>
+                  <h2 className="text-shadow text-center h4">Computer</h2>
                 </div>
                 <div className="back text-center">
                   <Link href="categories/amazon-web-services">
                     <a>
-                      <h3 className="h1">Decorations</h3>
+                      <h5 className="h4">Web Development And Programming </h5>
                     </a>
                   </Link>
                   <p className="lead">
