@@ -35,6 +35,22 @@ class MyDocument extends Document {
             defer
           ></script>
           <script dangerouslySetInnerHTML={this.setGoogleTags()} />
+          {/* google adsense */}
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2036241181709410"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                      (adsbygoogle = window.adsbygoogle || []).push({
+                      google_ad_client: "ca-pub-2036241181709410",
+                      enable_page_level_ads: true
+                                            });
+                      `,
+            }}
+          />
         </Head>
         <body>
           <Main />
