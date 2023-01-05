@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Private from '../../components/auth/Private';
 import Link from 'next/link';
+import Adsense from '../../components/Adsense';
 
 const UserIndex = () => {
   return (
@@ -28,7 +29,9 @@ const UserIndex = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-8">right</div>
+            <div className="col-md-8">
+              <Adsense />
+            </div>
           </div>
         </div>
       </Private>

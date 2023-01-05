@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import { singleTag } from '../../actions/tag';
 import { DOMAIN, APP_NAME, FB_APP_ID } from '../../config';
 import Card from '../../components/blog/Card';
+import Adsense from '../../components/Adsense';
 
 const Tag = ({ tag, blogs, query }) => {
   const head = () => (
@@ -51,6 +52,7 @@ const Tag = ({ tag, blogs, query }) => {
               </div>
             </header>
           </div>
+          <Adsense />
         </main>
       </Layout>
     </>
