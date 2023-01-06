@@ -8,7 +8,6 @@ import renderHTML from 'react-render-html';
 import moment from 'moment';
 import SmallCard from '../../components/blog/SmallCard';
 import DisqusThread from '../../components/DisqusThread';
-import Adsense from '../../components/Adsense';
 
 const SingleBlog = ({ blog, query }) => {
   const [related, setRelated] = useState([]);
@@ -75,7 +74,6 @@ const SingleBlog = ({ blog, query }) => {
   const showComments = () => {
     return (
       <div>
-        <Adsense />
         <DisqusThread
           id={blog.id}
           title={blog.title}

@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { listBlogsWithCategoriesAndTags } from '../../actions/blog';
 import Card from '../../components/blog/Card';
 import { DOMAIN, APP_NAME, FB_APP_ID } from '../../config';
-import Adsense from '../../components/Adsense';
 
 const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, router }) => {
   const head = () => (
@@ -130,7 +129,6 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, router }) => {
           <div className="container-fluid">{showAllBlogs()}</div>
           <div className="container-fluid">{showLoadedBlogs()}</div>
           <div className="text-center pt-5 pb-5">{loadMoreButton()}</div>
-          <Adsense />
         </main>
       </Layout>
     </>

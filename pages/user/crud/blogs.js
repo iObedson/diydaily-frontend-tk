@@ -1,9 +1,7 @@
 import Layout from '../../../components/Layout';
 import Private from '../../../components/auth/Private';
 import BlogRead from '../../../components/crud/BlogRead';
-import Link from 'next/link';
 import { isAuth } from '../../../actions/auth';
-import Adsense from '../../../components/Adsense';
 
 const Blog = () => {
   const username = isAuth() && isAuth().username;
@@ -17,7 +15,6 @@ const Blog = () => {
             </div>
             <div className="col-md-12">
               <BlogRead username={username} />
-              <Adsense />
             </div>
           </div>
         </div>

@@ -3,7 +3,6 @@ import Layout from '../../components/Layout';
 import { singleCategory } from '../../actions/category';
 import { DOMAIN, APP_NAME, FB_APP_ID } from '../../config';
 import Card from '../../components/blog/Card';
-import Adsense from '../../components/Adsense';
 
 const Category = ({ category, blogs, query }) => {
   const head = () => (
@@ -54,7 +53,6 @@ const Category = ({ category, blogs, query }) => {
               </div>
             </header>
           </div>
-          <Adsense />
         </main>
       </Layout>
     </>

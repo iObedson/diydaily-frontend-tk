@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import ContactForm from '../components/form/ContactForm';
-import Adsense from '../components/Adsense';
 
 const Contact = () => {
   return (
@@ -12,7 +11,6 @@ const Contact = () => {
             <h2>Contact form</h2>
             <hr />
             <ContactForm />
-            <Adsense />
           </div>
         </div>
       </div>

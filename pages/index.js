@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
-import Adsense from '../components/Adsense';
 
 const Index = () => {
   return (
@@ -38,7 +37,6 @@ const Index = () => {
                 challenge for a chance to win prizes.
               </p>
             </div>
-            <Adsense />
           </div>
         </div>
         <div className="container-fluid">
@@ -128,7 +126,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <Adsense />
       </article>
     </Layout>
   );

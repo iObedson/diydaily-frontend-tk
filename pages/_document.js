@@ -29,18 +29,18 @@ class MyDocument extends Document {
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-J19HVNQ8DX"
           ></script>
-          <script
+          {/* <script
             src="https://accounts.google.com/gsi/client"
             async
             defer
-          ></script>
+          ></script> */}
           <script dangerouslySetInnerHTML={this.setGoogleTags()} />
           {/* google adsense */}
-          <script
+          {/* <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2036241181709410"
             crossOrigin="anonymous"
-          ></script>
+          ></script> */}
           {/* <script
             dangerouslySetInnerHTML={{
               __html: `
